@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "Auto Close URLs",
+  "version": "1.0.0",
+  "description": "Automatically closes tabs matching user-defined URL patterns after an optional timeout.",
+  "permissions": [
+    "tabs",
+    "storage"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "options_ui": {
+    "page": "options.html",
+    "open_in_tab": true
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Auto Close URLs"
+  }
+}
